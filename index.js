@@ -209,8 +209,8 @@ WooCommerceAPI.prototype._request = function(method, endpoint, data, callback) {
  *
  * @return {Object}
  */
-WooCommerceAPI.prototype.get = function(endpoint, callback) {
-  return this._request('GET', endpoint, null, callback);
+WooCommerceAPI.prototype.get = function(endpoint, data = null, callback) {
+  return this._request('GET', endpoint, data, callback);
 };
 
 /**
